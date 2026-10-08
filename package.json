@@ -1,0 +1,40 @@
+{
+  "name": "br-record-linkage",
+  "version": "0.1.0",
+  "description": "Zero-dependency fuzzy name matching for Brazilian Portuguese: Jaro-Winkler, token-sort, Monge-Elkan and Metaphone-PT-BR blocking. Proof of concept extracted from a statewide public defender system.",
+  "type": "module",
+  "main": "dist/src/index.js",
+  "types": "dist/src/index.d.ts",
+  "license": "MIT",
+  "author": "Isaac Jairi da Silva",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Isaac-jairi/br-record-linkage.git"
+  },
+  "keywords": [
+    "record-linkage",
+    "entity-resolution",
+    "fuzzy-matching",
+    "jaro-winkler",
+    "monge-elkan",
+    "metaphone",
+    "brazilian-portuguese",
+    "typescript"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "tsc --noEmit",
+    "build": "tsc",
+    "example": "tsx examples/basic.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.0",
+    "vitest": "^2.1.0"
+  }
+}
